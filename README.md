@@ -46,14 +46,17 @@ Date: Wed, 19 Sep 2018 06:33:16 GMT
 [{"id":2127770536,"firstName":"mkyong","lastName":"abc"}]
 
 # Delete a customer by a given id
-curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/customers/2127770536 -i
+curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/customers/{id} -i
+#In the url, the path param {id} should be replaced by the id generated from the GET REST API call
+
 
 # Response:
 HTTP/1.1 204
 Date: Wed, 19 Sep 2018 06:33:53 GMT
 
 # Delete a customer with a id, which does not exist
-curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/customers/1 -i
+curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/customers/{id} -i
+#In the url, the path param {id} should be replaced by the id generated from the GET REST API call
 
 # Response:
 HTTP/1.1 404
