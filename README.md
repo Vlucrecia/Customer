@@ -7,8 +7,8 @@ This project is to handle the below operstions of a customer using REST API and 
   3. List all Customers
 Where a Customer has the following attributes:
   • Id
-  • Firstname
-  • Surname
+  • Firstname [mandatory]
+  • Surname [mandatory]
   
   
   This project requires JDK8 and it uses spring boot and Guava Loading Cache to persist the data for some duration, instead of database.
